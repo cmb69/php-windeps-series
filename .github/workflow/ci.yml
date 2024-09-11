@@ -1,0 +1,16 @@
+name: CI
+on: [pull_request]
+jobs:
+  checks:
+    defaults:
+      run:
+        shell: cmd
+    runs-on: windows-2022
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: x64 and x86 match
+        run: |
+          for %%i in (series/*-64-*.txt) do (
+            @powershell .github\scripts\x86-x64.ps1 %%i
+          )
