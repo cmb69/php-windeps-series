@@ -29,7 +29,7 @@ libxslt-1.1.37-vs16-x64.zip
 libzip-1.7.1-1-vs16-x64.zip
 mpir-3.0.0-vs16-x64.zip
 net-snmp-5.7.3-3-vs16-x64.zip
-nghttp2-1.59.0-vs16-x64.zip
+nghttp2-1.58.0-vs16-x64.zip
 openldap-2.4.47-1-vs16-x64.zip
 openssl-3.0.13.pl1-vs16-x64.zip
 sqlite3-3.40.0-vs16-x64.zip

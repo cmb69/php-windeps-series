@@ -14,3 +14,5 @@ jobs:
           for %%i in (series\*-x64-*.txt) do (
             @powershell .github\scripts\x86-x64.ps1 %%i
           )
+      - name: Update packages.csv
+        run: php parse.php
