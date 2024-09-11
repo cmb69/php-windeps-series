@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-      - name: x64 and x86 match
+      - name: Check x64 and x86 match
         run: |
           for %%i in (series\*-x64-*.txt) do (
             @powershell .github\scripts\x86-x64.ps1 %%i
